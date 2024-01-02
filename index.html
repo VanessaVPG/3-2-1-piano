@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>3,2,1...Piano!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Virtual Piano</h1>
+      <div class="column volume-slider">
+        <label for="volume">
+          Volume
+        </label>
+        <input type="range" id="volume" min="0" max="100" value="50">
+      </div>
+      <div class="column keys-toggle">
+        <label for="toggle">Teclas</label>
+        <input type="checkbox" checked id="toggle">
+      </div>
+    </header>
+    <ul class="piano-keys">
+      <li class="key white" data-key="a"><span>a</span></li>
+      <li class="key black" data-key="w"><span>w</span></li>
+      <li class="key white" data-key="s"><span>s</span></li>
+      <li class="key black" data-key="e"><span>e</span></li>
+      <li class="key white" data-key="d"><span>d</span></li>
+      <li class="key black" data-key="f"><span>f</span></li>
+      <li class="key white" data-key="t"><span>t</span></li>
+      <li class="key black" data-key="g"><span>g</span></li>
+      <li class="key white" data-key="y"><span>y</span></li>
+      <li class="key black" data-key="h"><span>h</span></li>
+      <li class="key white" data-key="u"><span>u</span></li>
+      <li class="key black" data-key="j"><span>j</span></li>
+      <li class="key white" data-key="k"><span>k</span></li>
+      <li class="key black" data-key="o"><span>o</span></li>
+      <li class="key white" data-key="l"><span>l</span></li>
+      <li class="key black" data-key="p"><span>p</span></li>
+      <li class="key white" data-key=";"><span>;</span></li>
+    </ul>
+  </main>
+  <script src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
